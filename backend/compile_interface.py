@@ -28,8 +28,12 @@ def compile_interface(verbose=True):
                                          const unsigned int N, const unsigned int dim,
                                          const double dt, const unsigned int T);""")
 
+  ffi.cdef("""void cffi_iterate(double* t_prob, double* J_star,
+                                double* epsilon, double* alpha,
+                                double* max_u, double* n_stars, double* max_f);""")
+
   # Now create the full glue code to your library
-  ffi.set_source("cpp_interface",  # name of the output C/C++ extension, name is not important, but use sth unique
+  ffi.set_source("cpp_interface",  # name of the output C/C++ extension, name is not important, but use something unique
 
                  # Header with the interface, the content must match the cdef's from above
                  #

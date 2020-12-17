@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -g -fPIC   -fopenmp
 
 CXX_DEFINES = -Dbackend_EXPORTS
 
-CXX_INCLUDES = -I/mnt/c/Users/Johan/CLionProjects/HA2/cpp_backend/lib -I/mnt/c/Users/Johan/CLionProjects/HA2/cpp_backend/lib/inc 
+CXX_INCLUDES = -I/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib -I/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/inc 
 

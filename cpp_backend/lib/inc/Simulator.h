@@ -4,6 +4,7 @@
 #define EIGEN_USE_BLAS
 #define EIGEN_USE_LAPACKE
 #include "Eigen/Dense"
+#include "Eigen/Sparse"
 
 namespace Backend
 {
@@ -77,6 +78,10 @@ namespace Backend
   void simulate(double* x, double* v,
                 const unsigned int N, const unsigned int dim,
                 const double dt, const unsigned int T);
+
+  // template<typename Derived>
+  // void iterate(const Eigen::SparseMatrixBase<Derived> &a_mat);
+  void iterate(const Eigen::SparseMatrix<double> &sparse_matrix);
 }
 
 #endif

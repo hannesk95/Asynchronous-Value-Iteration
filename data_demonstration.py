@@ -29,7 +29,8 @@ def jump(x, u, P, max_u):
   targets = P[x * max_u + u].nonzero()[1]
 
   if targets.size == 0:
-    raise ValueError(f"Control {u=} is not allowed in state {x=}")
+    raise ValueError("Control is not allowed in state")
+    # raise ValueError(f"Control {u=} is not allowed in state {x=}")
 
   disturbance = np.random.randint(0, targets.size)
 

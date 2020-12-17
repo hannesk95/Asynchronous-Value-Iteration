@@ -1,7 +1,9 @@
 #include "Simulator.h"
-
 #include "Definitions.h"
 #include <iostream>
+
+#include <Eigen/Sparse>
+#include <vector>
 
 namespace Backend
 {
@@ -58,7 +60,7 @@ namespace Backend
   void simulate(double* x, double* v, const unsigned int N, const unsigned int dim, const double dt)
   {
     // Don't use a row major format here: the continuous data from outside comes from row major format
-    // and must be written transposed in col major matirx, such that each col of x or v is one row of
+    // and must be written transposed in col major matrix, such that each col of x or v is one row of
     // the original numpy array
     Eigen::Map<Eigen::MatrixXd> x_map(x, dim, N), v_map(v, dim, N);
 
@@ -75,5 +77,29 @@ namespace Backend
     Eigen::Map<Eigen::MatrixXd> x_map(x, dim, N), v_map(v, dim, N);
 
     simulate(x_map, v_map, dt, T);
+  }
+
+  // template<typename Derived>
+  void iterate(const Eigen::SparseMatrix<double> &sparse_matrix, vector<double> &J_star)
+  {
+    for(unsigned int iteration = 0; iteration < 1000; iteration++)
+    {
+        for(unsigned int state = 0; state < sparse_matrix.outerSize())
+        {
+            for(unsigned int action = 0; )
+        }
+    }
+
+  }
+
+  void iterate(double* t_prob, double* J_star, double* epsilon,
+               double* alpha, double* max_u, double* n_stars, double* max_f)
+  {
+    Eigen::SparseMatrix<double> A(600, 125);
+    // vector<double> J(125, 0);
+    // vector<double> pi(125, 0);
+
+    //double error = std::numeric_limits<double>::infinity();
+
   }
 }

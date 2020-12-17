@@ -67,6 +67,27 @@ _ffi = FFI()
 # Now just the wrappers for the c++ code #
 ##########################################
 
+def iterate(t_prob, J_star,J, pi, epsilon, alpha, max_u, n_stars, max_f):
+
+  if t_prob.size[1] != len(J_star):
+    raise  ValueError("Missmatch between state values and states.")
+
+  t_prob_ptr = _ffi.cast("double*", t_prob.ctypes.data)
+  J_star_ptr = _ffi.cast("double*", J_star.ctypes.data)
+  J_ptr = _ffi("Double*", J.ctype.data)
+  pi_ptr = _ffi("Double*", pi.ctype.data)
+  epsilon_ptr = _ffi.cast("double*", epsilon.ctypes.data)
+  alpha_ptr = _ffi.cast("double*", alpha.ctypes.data)
+  max_u_ptr = _ffi.cast("double*", max_u.ctypes.data)
+  n_stars_ptr = _ffi.cast("double*", n_stars.ctypes.data)
+  max_f_ptr = _ffi.cast("double*", max_f.ctypes.data)
+
+  cpp_interface.lib.cffi_iterate(t_prob_ptr, J_star_ptr, J_ptr, pi_ptr,
+                                 epsilon_ptr, alpha_ptr, max_u_ptr, n_stars_ptr, max_f_ptr)
+
+  return J, pi
+
+
 def simulate(x, v, dt=1e-1):
   """ Same as in the python version, but using the c++ library """
 

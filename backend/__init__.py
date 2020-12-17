@@ -13,7 +13,7 @@ try:
 except (ModuleNotFoundError, ImportError) as e:
   import logging
   _logger = logging.getLogger(__name__)
-  _logger.warning(f"The c++ backend could not be imported, falling back to python!\nReason:\n\n{e}\n\n")
+  _logger.warning(f"The c++ backend could not be imported, using Python instead!\n\nReason: {e}\n\n")
 
   # Might be handy to kill the program if this step fails ...
   # print(f"Reason - {type(e)}:", e)

@@ -4,9 +4,14 @@
 #include "omp.h"
 #include "Definitions.h"
 #include "Simulator.h"
+#include <Eigen/Sparse>
 
 int main(int argc, char *argv[])
 {
+
+  Eigen::SparseMatrix<double> A(600, 125);
+  std::cout << "Shape: " << A.innerSize() << std::endl;
+
   Eigen::MatrixXd x(2, 3);
   x << 0.0, 1.0, -1.0,
        0.0, 1.0, -1.0;

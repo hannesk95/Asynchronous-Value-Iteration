@@ -53,7 +53,7 @@ def one_step_cost(state, control, n_stars):
 
 
 def main():
-    data_dir = "data_debug"
+    data_dir = "data/data_debug"
     t_prob = to_sparse_matrix(*load_sparse_matrix(data_dir, "P"))
     J_star = np.load(f"{data_dir}/J_star_alpha_0_99_iter_1000.npy")
     pi_star = np.load(f"{data_dir}/pi_star_alpha_0_99_iter_1000.npy")
@@ -110,10 +110,10 @@ def main():
     print("\n Euclidean distance of J* to J: " + str(LA.norm(J - J_star)))
     print("\n Euclidean distance of pi* to pi: " + str(LA.norm(pi - pi_star)))
 
-    with open('./data_debug/pi_own.npy', 'wb') as f:
+    with open('.data/data_debug/pi_own.npy', 'wb') as f:
         np.save(f, pi)
 
-    with open('./data_debug/J_own.npy', 'wb') as f:
+    with open('.data/data_debug/J_own.npy', 'wb') as f:
         np.save(f, J)
 
 if __name__ == "__main__":

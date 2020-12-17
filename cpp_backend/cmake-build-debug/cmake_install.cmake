@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/Johan/CLionProjects/HA2/cpp_backend
+# Install script for directory: /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/c/Users/Johan/CLionProjects/HA2/cpp_backend/cmake-build-debug/lib/cmake_install.cmake")
+  include("/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/lib/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/Johan/CLionProjects/HA2/cpp_backend/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

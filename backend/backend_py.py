@@ -1,54 +1,68 @@
 import numpy as np
+import tqdm
+import math
+from numpy import linalg as LA
 
-class Parameters:
-  k = 0.99  # Dampening of velocity
-  v_max = 0.5  # Max speed to prevent explosions
-  x_max = 1.5  # Half size of the world
 
-  m = 5e4  # Mass of particles, somewhat large to compensate the force
-  G = 6.6743e-11  # Gravity constant in m^3 / (kg s^2)
+def state_to_tuple(x, n_stars):
+    # Fuel f, goal star g and current node in graph i
+    f = x // (n_stars * n_stars)
+    g = x % (n_stars * n_stars) // n_stars
+    i = x % (n_stars * n_stars) % n_stars
 
-def gravity(x1, x2):
-  """ Returns the force acting on x1. x2 receives the same force with different sign. """
-  d = x2 - x1
-  r = np.linalg.norm(d)
-  d /= r
-  f = Parameters.G * Parameters.m * Parameters.m / (r * r)
-  return f * d
+    return f, g, i
 
-def simulate(x, v, dt=1e-1):
 
-  N = x.shape[1]
+def state_from_tuple(f, g, i, n_stars):
+    """ Fuel f, goal star g and current node in graph i """
+    return f * n_stars * n_stars + g * n_stars + i
 
-  F = np.zeros_like(x)
 
-  for p1 in range(N):
-    for p2 in range(p1 + 1, N):
-      f = gravity(x[p1, :], x[p2, :])
-      F[p1, :] += f
-      F[p2, :] -= f
+def one_step_cost(state, control, n_stars):
+    f, g, i = state_to_tuple(state, n_stars)
 
-  # Simple euler step
-  v = Parameters.k * v + dt * F / Parameters.m
-  v = np.clip(v, -Parameters.v_max, Parameters.v_max)
+    # In goal and no jump
+    if g == i and control == 0:
+        return -100.0
 
-  x = x + dt * v
-  x = np.clip(x, -Parameters.x_max, Parameters.x_max)
+    # Out of fuel
+    if f == 0:
+        return 100.0
 
-  return x, v
+    # Avoid unnecessary jumps
+    if control > 0:
+        return 5.0
 
-def simulate_T_steps(x, v, dt=1e-1, T=100):
-  for t in range(T):
-    x, v = simulate(x, v, dt)
-  return x, v
+    # Else no cost
+    return 0.0
 
-if __name__ == "__main__":
-  from matplotlib import pyplot as plt
 
-  plt.figure()
-  r = np.linspace(0.1, 2, 1000)
-  plt.plot(r, -Parameters.G * Parameters.m ** 2 / r ** 2)
-  plt.xlabel("r")
-  plt.ylabel("f")
-  plt.grid()
-  plt.show()
+def iterate(t_prob, J_star, epsilon, alpha, max_u, n_stars, max_f):
+
+    J = np.zeros(t_prob.shape[1])
+    pi = np.zeros(t_prob.shape[1])
+    error = math.inf
+
+    #while error > epsilon:
+    for _ in range(10):
+        for state in range(t_prob.shape[1]):
+            J_temp = []
+            t_prob_temp = t_prob[state * max_u: state * max_u + max_u, :]
+
+            for action in range(max_u):
+                t_prob_current = t_prob_temp[action, :]
+                idx = np.nonzero(t_prob_current)[0]
+
+                if len(idx) == 0:
+                    continue
+
+                else:
+                    cost = one_step_cost(state, action, n_stars)
+                    J_temp.append((t_prob_current.multiply(cost + alpha * J).toarray()).sum())
+
+            J[state] = np.min(J_temp)
+            pi[state] = np.argmin(J_temp)
+
+        error = LA.norm(J - J_star)
+
+    return J, pi

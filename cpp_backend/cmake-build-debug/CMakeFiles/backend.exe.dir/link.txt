@@ -1,1 +1,1 @@
-/usr/bin/c++  -Wall -g  -rdynamic CMakeFiles/backend.exe.dir/main.cpp.o  -o backend.exe  -Wl,-rpath,/mnt/c/Users/Johan/CLionProjects/HA2/cpp_backend/cmake-build-debug/lib lib/libbackend.so -lgomp -lpthread -llapacke -lopenblas -lgfortran -lm 
+/usr/bin/c++  -Wall -g  -rdynamic CMakeFiles/backend.exe.dir/main.cpp.o  -o backend.exe  -Wl,-rpath,/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/lib lib/libbackend.so -lgomp -lpthread -llapacke -lopenblas -lgfortran -lm 

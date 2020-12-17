@@ -31,8 +31,8 @@ T = 25_000
 N = 200
 
 # Row Major format, each row is one particle to make use of continuous memory
-x = np.random.uniform(-0.5 * backend_py.Parameters.x_max, 0.5 * backend_py.Parameters.x_max, size=(N, 2))
-v = np.random.uniform(-0.1 * backend_py.Parameters.v_max, 0.1 * backend_py.Parameters.v_max, size=(N, 2))
+x = np.random.uniform(-0.5 * backend_py_old.Parameters.x_max, 0.5 * backend_py_old.Parameters.x_max, size=(N, 2))
+v = np.random.uniform(-0.1 * backend_py_old.Parameters.v_max, 0.1 * backend_py_old.Parameters.v_max, size=(N, 2))
 
 # For debugging
 # x = np.array([[0., 0.],
@@ -54,7 +54,7 @@ for t in range(T - 1):
 t2 = time.perf_counter()
 
 for t in range(T - 1):
-  X[t + 1, ...], V[t + 1, ...] = backend_py.simulate(X[t, ...], V[t, ...])
+  X[t + 1, ...], V[t + 1, ...] = backend_py_old.simulate(X[t, ...], V[t, ...])
 
 t3 = time.perf_counter()
 
