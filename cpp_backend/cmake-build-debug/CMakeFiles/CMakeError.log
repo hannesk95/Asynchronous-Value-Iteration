@@ -1,40 +1,44 @@
 Determining if the function sgemm_ exists failed with the following output:
 Change Dir: /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_5b037/fast && /usr/bin/make -f CMakeFiles/cmTC_5b037.dir/build.make CMakeFiles/cmTC_5b037.dir/build
+Run Build Command(s):/usr/bin/make cmTC_c218f/fast && make: Warning: File 'Makefile' has modification time 0.3 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_c218f.dir/build.make CMakeFiles/cmTC_c218f.dir/build
 make[1]: Entering directory '/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5b037.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_   -o CMakeFiles/cmTC_5b037.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_5b037
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b037.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_    -rdynamic CMakeFiles/cmTC_5b037.dir/CheckFunctionExists.c.o  -o cmTC_5b037 
-/usr/bin/ld: CMakeFiles/cmTC_5b037.dir/CheckFunctionExists.c.o: in function `main':
+make[1]: Warning: File 'CMakeFiles/cmTC_c218f.dir/flags.make' has modification time 0.27 s in the future
+Building C object CMakeFiles/cmTC_c218f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_   -o CMakeFiles/cmTC_c218f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c218f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c218f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_    -rdynamic CMakeFiles/cmTC_c218f.dir/CheckFunctionExists.c.o  -o cmTC_c218f 
+/usr/bin/ld: CMakeFiles/cmTC_c218f.dir/CheckFunctionExists.c.o: in function `main':
 CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_5b037.dir/build.make:87: cmTC_5b037] Error 1
+make[1]: *** [CMakeFiles/cmTC_c218f.dir/build.make:87: cmTC_c218f] Error 1
 make[1]: Leaving directory '/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_5b037/fast] Error 2
+make: *** [Makefile:121: cmTC_c218f/fast] Error 2
 
 
 
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_01c21/fast && /usr/bin/make -f CMakeFiles/cmTC_01c21.dir/build.make CMakeFiles/cmTC_01c21.dir/build
+Run Build Command(s):/usr/bin/make cmTC_369bc/fast && make: Warning: File 'Makefile' has modification time 0.3 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_369bc.dir/build.make CMakeFiles/cmTC_369bc.dir/build
 make[1]: Entering directory '/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_01c21.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_01c21.dir/src.c.o   -c /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_01c21
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01c21.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_01c21.dir/src.c.o  -o cmTC_01c21 
-/usr/bin/ld: CMakeFiles/cmTC_01c21.dir/src.c.o: in function `main':
+make[1]: Warning: File 'CMakeFiles/cmTC_369bc.dir/flags.make' has modification time 0.26 s in the future
+Building C object CMakeFiles/cmTC_369bc.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_369bc.dir/src.c.o   -c /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_369bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_369bc.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_369bc.dir/src.c.o  -o cmTC_369bc 
+/usr/bin/ld: CMakeFiles/cmTC_369bc.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_01c21.dir/build.make:87: cmTC_01c21] Error 1
+make[1]: *** [CMakeFiles/cmTC_369bc.dir/build.make:87: cmTC_369bc] Error 1
 make[1]: Leaving directory '/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_01c21/fast] Error 2
+make: *** [Makefile:121: cmTC_369bc/fast] Error 2
 
 
 Source file was:
@@ -60,56 +64,41 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d7852/fast && /usr/bin/make -f CMakeFiles/cmTC_d7852.dir/build.make CMakeFiles/cmTC_d7852.dir/build
+Run Build Command(s):/usr/bin/make cmTC_26f1a/fast && make: Warning: File 'Makefile' has modification time 0.3 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_26f1a.dir/build.make CMakeFiles/cmTC_26f1a.dir/build
 make[1]: Entering directory '/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d7852.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d7852.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_d7852
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7852.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d7852.dir/CheckFunctionExists.c.o  -o cmTC_d7852  -lpthreads 
+make[1]: Warning: File 'CMakeFiles/cmTC_26f1a.dir/flags.make' has modification time 0.26 s in the future
+Building C object CMakeFiles/cmTC_26f1a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_26f1a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_26f1a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26f1a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_26f1a.dir/CheckFunctionExists.c.o  -o cmTC_26f1a  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_d7852.dir/build.make:87: cmTC_d7852] Error 1
+make[1]: *** [CMakeFiles/cmTC_26f1a.dir/build.make:87: cmTC_26f1a] Error 1
 make[1]: Leaving directory '/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_d7852/fast] Error 2
+make: *** [Makefile:121: cmTC_26f1a/fast] Error 2
 
 
 
 Determining if the function LAPACKE_dgeqrf exists failed with the following output:
 Change Dir: /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_5c519/fast && /usr/bin/make -f CMakeFiles/cmTC_5c519.dir/build.make CMakeFiles/cmTC_5c519.dir/build
+Run Build Command(s):/usr/bin/make cmTC_a2597/fast && make: Warning: File 'Makefile' has modification time 0.32 s in the future
+/usr/bin/make -f CMakeFiles/cmTC_a2597.dir/build.make CMakeFiles/cmTC_a2597.dir/build
 make[1]: Entering directory '/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5c519.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=LAPACKE_dgeqrf   -o CMakeFiles/cmTC_5c519.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_5c519
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c519.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=LAPACKE_dgeqrf    -rdynamic CMakeFiles/cmTC_5c519.dir/CheckFunctionExists.c.o  -o cmTC_5c519  /usr/lib/x86_64-linux-gnu/libopenblas.so 
-/usr/bin/ld: CMakeFiles/cmTC_5c519.dir/CheckFunctionExists.c.o: in function `main':
+make[1]: Warning: File 'CMakeFiles/cmTC_a2597.dir/flags.make' has modification time 0.29 s in the future
+Building C object CMakeFiles/cmTC_a2597.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=LAPACKE_dgeqrf   -o CMakeFiles/cmTC_a2597.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a2597
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a2597.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=LAPACKE_dgeqrf    -rdynamic CMakeFiles/cmTC_a2597.dir/CheckFunctionExists.c.o  -o cmTC_a2597  /usr/lib/x86_64-linux-gnu/libopenblas.so 
+/usr/bin/ld: CMakeFiles/cmTC_a2597.dir/CheckFunctionExists.c.o: in function `main':
 CheckFunctionExists.c:(.text+0x14): undefined reference to `LAPACKE_dgeqrf'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_5c519.dir/build.make:88: cmTC_5c519] Error 1
+make[1]: *** [CMakeFiles/cmTC_a2597.dir/build.make:88: cmTC_a2597] Error 1
 make[1]: Leaving directory '/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_5c519/fast] Error 2
-
-
-
-Determining if the function LAPACKE_dgeqrf exists failed with the following output:
-Change Dir: /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/make cmTC_f68f9/fast && /usr/bin/make -f CMakeFiles/cmTC_f68f9.dir/build.make CMakeFiles/cmTC_f68f9.dir/build
-make[1]: Entering directory '/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f68f9.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=LAPACKE_dgeqrf   -o CMakeFiles/cmTC_f68f9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_f68f9
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f68f9.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=LAPACKE_dgeqrf    -rdynamic CMakeFiles/cmTC_f68f9.dir/CheckFunctionExists.c.o  -o cmTC_f68f9  /usr/lib/x86_64-linux-gnu/libopenblas.so 
-/usr/bin/ld: CMakeFiles/cmTC_f68f9.dir/CheckFunctionExists.c.o: in function `main':
-CheckFunctionExists.c:(.text+0x14): undefined reference to `LAPACKE_dgeqrf'
-collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_f68f9.dir/build.make:88: cmTC_f68f9] Error 1
-make[1]: Leaving directory '/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_f68f9/fast] Error 2
+make: *** [Makefile:121: cmTC_a2597/fast] Error 2
 
 
 

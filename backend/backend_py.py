@@ -2,6 +2,7 @@ import numpy as np
 import tqdm
 import math
 from numpy import linalg as LA
+import scipy.sparse
 
 
 def state_to_tuple(x, n_stars):
@@ -11,11 +12,6 @@ def state_to_tuple(x, n_stars):
     i = x % (n_stars * n_stars) % n_stars
 
     return f, g, i
-
-
-def state_from_tuple(f, g, i, n_stars):
-    """ Fuel f, goal star g and current node in graph i """
-    return f * n_stars * n_stars + g * n_stars + i
 
 
 def one_step_cost(state, control, n_stars):
@@ -37,19 +33,26 @@ def one_step_cost(state, control, n_stars):
     return 0.0
 
 
-def iterate(t_prob, J_star, epsilon, alpha, max_u, n_stars, max_f):
+def to_sparse_matrix(data, indices, indptr, shape):
+    # Eigen provides a similar why to create a CSR view of these arrays, take a look at Eigen::Map< CSR Matrix >(...)
+    return scipy.sparse.csr_matrix((data, indices, indptr), shape=shape, dtype=data.dtype)
 
-    J = np.zeros(t_prob.shape[1])
-    pi = np.zeros(t_prob.shape[1])
+
+def iterate(data, indices, indptr, n_rows, n_columns,
+            J_star, J, pi, epsilon, alpha, n_actions,
+            n_stars, n_states):
+
+    t_prob = to_sparse_matrix(data, indices, indptr, (n_rows, n_columns))
+
     error = math.inf
 
-    #while error > epsilon:
-    for _ in range(10):
-        for state in range(t_prob.shape[1]):
+    while error > epsilon:
+    # for _ in range(1000):
+        for state in range(n_states):
             J_temp = []
-            t_prob_temp = t_prob[state * max_u: state * max_u + max_u, :]
+            t_prob_temp = t_prob[state * n_actions: state * n_actions + n_actions, :]
 
-            for action in range(max_u):
+            for action in range(n_actions):
                 t_prob_current = t_prob_temp[action, :]
                 idx = np.nonzero(t_prob_current)[0]
 

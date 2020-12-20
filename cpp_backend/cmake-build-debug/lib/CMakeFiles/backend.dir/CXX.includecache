@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../lib/inc/Definitions.h
-
 ../lib/inc/Eigen/Cholesky
 Core
 ../lib/inc/Eigen/Core
@@ -1411,12 +1409,16 @@ Eigen/Sparse
 /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/src/Simulator.cpp
 Simulator.h
 /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/src/Simulator.h
-Definitions.h
-/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/src/Definitions.h
 iostream
 -
 Eigen/Sparse
 -
 vector
+-
+omp.h
+-
+tuple
+-
+complex
 -
 

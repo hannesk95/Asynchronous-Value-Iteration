@@ -1,105 +1,123 @@
 #include "Simulator.h"
-#include "Definitions.h"
 #include <iostream>
 
 #include <Eigen/Sparse>
 #include <vector>
+#include <omp.h>
+#include <tuple>
+#include <complex>
 
 namespace Backend
 {
-  void force(Eigen::Ref<Eigen::VectorXd> f, const Eigen::Ref<const Eigen::VectorXd> &x1, const Eigen::Ref<const Eigen::VectorXd> &x2)
-  {
-    // Connecting vector from particle one to particle 2, the reference can be used as target for the operation
-    f = x2 - x1;
 
-    // Euclidean distance of the two particles
-    double r = f.norm();
-
-    // Now normalize the connection vector to just have a unit direction
-    f /= r;
-
-    // Combine both into the gravity that is acting on particle 1
-    f *= GRAVITY_CONSTANT * PARTICLE_MASS * PARTICLE_MASS / (r * r);
-  }
-
-  void simulate(Eigen::Ref<Eigen::MatrixXd> x, Eigen::Ref<Eigen::MatrixXd> v, const double dt)
-  {
-    const unsigned int N = x.cols(), dim = x.rows();
-
-    static Eigen::MatrixXd F(dim, N);  // Static to keep storage alive
-    F.fill(0.0);                       // -> Remove values from last round
-
-    Eigen::VectorXd f(dim);
-
-    // Try to parallelize this loop, but pay attention to asynchronous writing of F -> mutex  required
-    for (unsigned int p1 = 0; p1 < N; p1++)
+    void state_to_tuple(int state, int n_stars, std::tuple<int, int, int> &properties)
     {
-      // This one is easier, but the workload shrinks with increasing p1
-      for (unsigned int p2 = p1 + 1; p2 < N; p2++)
-      {
-        force(f, x.col(p1), x.col(p2));
-
-        F.col(p1) += f;
-        F.col(p2) -= f;
-      }
+        int f = state / (n_stars * n_stars);
+        int g = state % (n_stars * n_stars) / n_stars;
+        int i = state % (n_stars * n_stars) % n_stars;
+        properties = std::make_tuple(f,g,i);
     }
 
-    // Simple euler step
-    v = VELOCITY_DAMPENING * v + dt * F / PARTICLE_MASS;
-    v = v.array().min(V_MAX).max(-V_MAX);  // Clipping, since euler integration is not the best
-
-    x = x + dt * v;
-    x = x.array().min(X_MAX).max(-X_MAX);  // Clipping, since euler integration is not the best
-  }
-  void simulate(Eigen::Ref<Eigen::MatrixXd> x, Eigen::Ref<Eigen::MatrixXd> v,
-                const double dt, const unsigned int T)
-  {
-    for (unsigned int t = 0; t < T; t++) simulate(x, v, dt);
-  }
-
-  void simulate(double* x, double* v, const unsigned int N, const unsigned int dim, const double dt)
-  {
-    // Don't use a row major format here: the continuous data from outside comes from row major format
-    // and must be written transposed in col major matrix, such that each col of x or v is one row of
-    // the original numpy array
-    Eigen::Map<Eigen::MatrixXd> x_map(x, dim, N), v_map(v, dim, N);
-
-    simulate(x_map, v_map, dt);
-  }
-
-  void simulate(double* x, double* v,
-                const unsigned int N, const unsigned int dim,
-                const double dt, const unsigned int T)
-  {
-    // Don't use a row major format here: the continuous data from outside comes from row major format
-    // and must be written transposed in col major matirx, such that each col of x or v is one row of
-    // the original numpy array
-    Eigen::Map<Eigen::MatrixXd> x_map(x, dim, N), v_map(v, dim, N);
-
-    simulate(x_map, v_map, dt, T);
-  }
-
-  // template<typename Derived>
-  void iterate(const Eigen::SparseMatrix<double> &sparse_matrix, vector<double> &J_star)
-  {
-    for(unsigned int iteration = 0; iteration < 1000; iteration++)
+    void one_step_cost(int state, int control, int n_stars, float &cost)
     {
-        for(unsigned int state = 0; state < sparse_matrix.outerSize())
+        std::tuple<int, int, int> properties;
+        state_to_tuple(state, control, properties);
+
+        int f = std::get<0>(properties);
+        int g = std::get<1>(properties);
+        int i = std::get<2>(properties);
+
+        if (g == i && control == 0)
         {
-            for(unsigned int action = 0; )
+            cost = -100.0;
+        }
+
+        else if (f == 0)
+        {
+            cost = 100.0;
+        }
+
+        else if (control > 0)
+        {
+            cost = 5.0;
+        }
+        else
+        {
+            cost = 0.0;
         }
     }
 
-  }
+    void iterate(Eigen::Ref<Eigen::SparseMatrix<double, Eigen::RowMajor>> t_prob_matrix,
+                 Eigen::Ref<Eigen::VectorXd> opt_state_values, Eigen::Ref<Eigen::VectorXd> state_val_buf,
+                 Eigen::Ref<Eigen::VectorXd> policy_val_buf, double epsilon, double alpha, const unsigned int n_actions,
+                 const unsigned int n_stars, const unsigned int n_states)
+    {
 
-  void iterate(double* t_prob, double* J_star, double* epsilon,
-               double* alpha, double* max_u, double* n_stars, double* max_f)
-  {
-    Eigen::SparseMatrix<double> A(600, 125);
-    // vector<double> J(125, 0);
-    // vector<double> pi(125, 0);
+        // Set number of thread using OpenMP
+        omp_set_num_threads(4);
 
-    //double error = std::numeric_limits<double>::infinity();
+        // Declare error variable
+        double error = std::numeric_limits<double>::infinity();
 
-  }
+        // Declare sparse matrix which will include slices of original sparse matrix
+        Eigen::SparseMatrix<double, Eigen::RowMajor> t_prob_matrix_slice(n_actions, n_states);
+
+        // Declare variable which stores cost
+        float cost = 0;
+
+        // Declare vector which stores the values for each actions belonging to a state
+        std::vector<float> min_actions(n_actions, 0.0);
+
+        while(error > epsilon)
+        {
+            // #pragma omp parallel for
+            for(unsigned int state = 0; state < n_states; state++)
+            {
+                t_prob_matrix_slice = t_prob_matrix.middleRows(state * n_actions, n_actions);
+                auto it = min_actions.begin();
+
+                // #pragma omp parallel for
+                for(unsigned int action = 0; action < n_actions; action++)
+                {
+                    auto t_prob_vec = t_prob_matrix_slice.innerVector(action);
+                    // idx = np.nonzero(t_prob_current)[0]
+
+                    one_step_cost(state, action, n_stars, cost);
+
+                    // auto cur_action_cost = t_prob_vec.dot(cost + (alpha * state_val_buf.array()));
+                    auto cur_action_cost = 5;
+                    // cur_action_cost = (t_prob_vec.cwiseProduct(cost + (alpha * state_val_buf.array())).matrix()).sum();
+
+                    min_actions.insert(it, cur_action_cost);
+                    it++;
+                }
+
+                // state_val_buf[state] = std::min_element(std::begin(min_actions), std::end(min_actions));
+                // policy_val_buf[state] = std::min_element(min_actions.begin(),min_actions.end()) - min_actions.begin();
+                // int minElementIndex = std::min_element(v.begin(),v.end()) - v.begin();
+            }
+
+            error = (state_val_buf.norm() - opt_state_values.norm()); // .array().abs();
+        }
+    }
+
+    void iterate(double* data, int* indices, int* indptr, const unsigned int n_rows,
+                 const unsigned int n_columns, double* J_star, double* J, double* pi, double epsilon,
+                 double alpha, const unsigned int n_actions, const unsigned int n_stars, const unsigned int n_states)
+    {
+        // Create sparse matrix by mapping external buffers
+        Eigen::Map<Eigen::SparseMatrix<double, Eigen::RowMajor>> t_prob_matrix(n_rows, n_columns, 290,
+                                                                               indptr, indices, data);
+        // Create array in which state values are stored
+        Eigen::Map<Eigen::VectorXd> state_val_buf(J, n_states);
+
+        // Create array in which the optimal state values are stored
+        Eigen::Map<Eigen::VectorXd> opt_state_values(J_star, n_states);
+
+        // Create array in which the policy is stored
+        Eigen::Map<Eigen::VectorXd> policy_val_buf(pi, n_states);
+
+        // Invoke asynchronous value iteration procedure
+        iterate(t_prob_matrix, opt_state_values, state_val_buf, policy_val_buf, epsilon, alpha, n_actions, n_stars, n_states);
+    }
 }

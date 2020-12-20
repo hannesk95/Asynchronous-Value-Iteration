@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-../lib/inc/Definitions.h
-
 ../lib/inc/Eigen/Cholesky
 Core
 ../lib/inc/Eigen/Core
@@ -1409,18 +1407,20 @@ Eigen/Sparse
 ../lib/inc/Eigen/Sparse
 
 /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/main.cpp
+vector
+-
+numeric
+-
 iostream
 -
 cmath
 -
 chrono
 -
-omp.h
-/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/omp.h
-Definitions.h
-/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/Definitions.h
-Simulator.h
-/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/Simulator.h
 Eigen/Sparse
 -
+omp.h
+/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/omp.h
+Simulator.h
+/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/Simulator.h
 
