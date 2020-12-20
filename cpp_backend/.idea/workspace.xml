@@ -31,40 +31,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="63e55b08-dd43-4f4d-ab89-0d4acd90eb9d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Asynchronous-Value-Iteration.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../async_value_iter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../async_value_iter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/backend_cpp.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/backend_cpp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/backend_py.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/backend_py.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/compile_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/compile_interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/backend.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/src/Simulator.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libbackend.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/inc/Definitions.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/inc/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/inc/Interface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/inc/Simulator.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/inc/Simulator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/backend.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/src/Simulator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/src/Simulator.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libbackend.so" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libbackend.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/Simulator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Simulator.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../particles.py" beforeDir="false" afterPath="$PROJECT_DIR$/../particles.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608491429111</updated>
-      <workItem from="1608491431499" duration="243000" />
+      <workItem from="1608491431499" duration="6652000" />
     </task>
     <servers />
   </component>
@@ -141,5 +114,39 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="224" key="GridCell.Tab.0.bottom" timestamp="1608498120973">
+      <screen x="-906" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1493" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
+    <state width="1493" height="224" key="GridCell.Tab.0.center" timestamp="1608498120973">
+      <screen x="-906" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1493" height="224" key="GridCell.Tab.0.center/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
+    <state width="1493" height="224" key="GridCell.Tab.0.left" timestamp="1608498120973">
+      <screen x="-906" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1493" height="224" key="GridCell.Tab.0.left/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
+    <state width="1493" height="224" key="GridCell.Tab.0.right" timestamp="1608498120973">
+      <screen x="-906" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1493" height="224" key="GridCell.Tab.0.right/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1608498120973">
+      <screen x="-906" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
+    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1608498120973">
+      <screen x="-906" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
+    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1608498120973">
+      <screen x="-906" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
+    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1608498120973">
+      <screen x="-906" y="-1080" width="1536" height="864" />
+    </state>
+    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
   </component>
 </project>

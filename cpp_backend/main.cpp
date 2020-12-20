@@ -96,8 +96,13 @@ int main()
     double epsilon = 10e-1;
     double alpha = 0.99;
 
+    auto t0 = std::chrono::system_clock::now();
+
     Backend::iterate(values.data(), row_pointer.data(), rows.data(), n_rows, n_columns, J_star.data(),
                      J.data(), pi.data(), epsilon, alpha, n_actions, n_stars, n_states);
+
+    auto t1 = std::chrono::system_clock::now();
+    std::cout << "This took " << std::chrono::duration_cast<std::chrono::microseconds>(t1 - t0).count() << " micro seconds" << std::endl;
 
     return 0;
 }
