@@ -171,32 +171,32 @@ backend/fast:
 	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug && $(MAKE) -f lib/CMakeFiles/backend.dir/build.make lib/CMakeFiles/backend.dir/build
 .PHONY : backend/fast
 
-src/Simulator.o: src/Simulator.cpp.o
+src/Iterator.o: src/Iterator.cpp.o
 
-.PHONY : src/Simulator.o
+.PHONY : src/Iterator.o
 
 # target to build an object file
-src/Simulator.cpp.o:
-	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug && $(MAKE) -f lib/CMakeFiles/backend.dir/build.make lib/CMakeFiles/backend.dir/src/Simulator.cpp.o
-.PHONY : src/Simulator.cpp.o
+src/Iterator.cpp.o:
+	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug && $(MAKE) -f lib/CMakeFiles/backend.dir/build.make lib/CMakeFiles/backend.dir/src/Iterator.cpp.o
+.PHONY : src/Iterator.cpp.o
 
-src/Simulator.i: src/Simulator.cpp.i
+src/Iterator.i: src/Iterator.cpp.i
 
-.PHONY : src/Simulator.i
+.PHONY : src/Iterator.i
 
 # target to preprocess a source file
-src/Simulator.cpp.i:
-	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug && $(MAKE) -f lib/CMakeFiles/backend.dir/build.make lib/CMakeFiles/backend.dir/src/Simulator.cpp.i
-.PHONY : src/Simulator.cpp.i
+src/Iterator.cpp.i:
+	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug && $(MAKE) -f lib/CMakeFiles/backend.dir/build.make lib/CMakeFiles/backend.dir/src/Iterator.cpp.i
+.PHONY : src/Iterator.cpp.i
 
-src/Simulator.s: src/Simulator.cpp.s
+src/Iterator.s: src/Iterator.cpp.s
 
-.PHONY : src/Simulator.s
+.PHONY : src/Iterator.s
 
 # target to generate assembly for a file
-src/Simulator.cpp.s:
-	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug && $(MAKE) -f lib/CMakeFiles/backend.dir/build.make lib/CMakeFiles/backend.dir/src/Simulator.cpp.s
-.PHONY : src/Simulator.cpp.s
+src/Iterator.cpp.s:
+	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug && $(MAKE) -f lib/CMakeFiles/backend.dir/build.make lib/CMakeFiles/backend.dir/src/Iterator.cpp.s
+.PHONY : src/Iterator.cpp.s
 
 # Help Target
 help:
@@ -211,9 +211,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... backend"
-	@echo "... src/Simulator.o"
-	@echo "... src/Simulator.i"
-	@echo "... src/Simulator.s"
+	@echo "... src/Iterator.o"
+	@echo "... src/Iterator.i"
+	@echo "... src/Iterator.s"
 .PHONY : help
 
 

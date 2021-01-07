@@ -22,20 +22,10 @@ def compile_interface(verbose=True):
     # More or less directly the content of interface.h, better would be to parse that file!
     # Use 3 quotes to format freely the C-Function and don't forget the ; in the end!
 
-
-
-    # ffi.cdef("""void cffi_simulate(double* x, double* v,
-    #                              const unsigned int N, const unsigned int dim,
-    #                              const double dt);""")
-    #
-    # ffi.cdef("""void cffi_simulate_T_steps(double* x, double* v,
-    #                                      const unsigned int N, const unsigned int dim,
-    #                                      const double dt, const unsigned int T);""")
-
     ffi.cdef("""void cffi_iterate(double* data, int* indices, int* indptr, const unsigned int n_rows, 
-                                const unsigned int n_columns, double* J_star, double* J, double* pi, float epsilon, 
-                                float alpha, const unsigned int n_actions, const unsigned int n_stars, 
-                                const unsigned int n_states);""")
+                                const unsigned int n_columns, double* J_star, double* J, double* pi, double epsilon, 
+                                double alpha, const unsigned int n_actions, const unsigned int n_stars, 
+                                const unsigned int n_states, const unsigned int n_nonzero);""")
 
     # Now create the full glue code to your library
     ffi.set_source("cpp_interface",

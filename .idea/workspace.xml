@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ba3739ff-df0a-4ff3-9876-735f47e28543" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/src/Iterator.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/async_value_iter.py" beforeDir="false" afterPath="$PROJECT_DIR$/async_value_iter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend_cpp.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend_cpp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend_py.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend_py.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/compile_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/compile_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/backend.exe.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/backend.exe.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/backend.exe.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/backend.exe.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/backend.exe.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/backend.exe.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/backend.exe.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/CMakeFiles/backend.exe.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/backend.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/backend.exe.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/backend.exe.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/CMakeFiles/backend.dir/src/Simulator.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/libbackend.so" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/cmake-build-debug/lib/libbackend.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/lib/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/lib/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/lib/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/lib/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/lib/inc/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/lib/inc/Interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/lib/inc/Simulator.h" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/lib/inc/Iterator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/lib/src/Simulator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/lib/src/Iterator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cpp_backend/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cpp_backend/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_demonstration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphsearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/particles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_backend.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1m0lFhOAIPKs8GgYFDtZnXfqF3B" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba3739ff-df0a-4ff3-9876-735f47e28543" name="Default Changelist" comment="" />
+      <created>1608638287912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608638287912</updated>
+    </task>
+    <servers />
+  </component>
+</project>

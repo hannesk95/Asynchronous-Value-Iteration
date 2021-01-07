@@ -57,27 +57,27 @@ include lib/CMakeFiles/backend.dir/progress.make
 # Include the compile flags for this target's objects.
 include lib/CMakeFiles/backend.dir/flags.make
 
-lib/CMakeFiles/backend.dir/src/Simulator.cpp.o: lib/CMakeFiles/backend.dir/flags.make
-lib/CMakeFiles/backend.dir/src/Simulator.cpp.o: ../lib/src/Simulator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/backend.dir/src/Simulator.cpp.o"
-	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/src/Simulator.cpp.o -c /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/src/Simulator.cpp
+lib/CMakeFiles/backend.dir/src/Iterator.cpp.o: lib/CMakeFiles/backend.dir/flags.make
+lib/CMakeFiles/backend.dir/src/Iterator.cpp.o: ../lib/src/Iterator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/backend.dir/src/Iterator.cpp.o"
+	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/lib && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/backend.dir/src/Iterator.cpp.o -c /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/src/Iterator.cpp
 
-lib/CMakeFiles/backend.dir/src/Simulator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/src/Simulator.cpp.i"
-	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/src/Simulator.cpp > CMakeFiles/backend.dir/src/Simulator.cpp.i
+lib/CMakeFiles/backend.dir/src/Iterator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/backend.dir/src/Iterator.cpp.i"
+	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/src/Iterator.cpp > CMakeFiles/backend.dir/src/Iterator.cpp.i
 
-lib/CMakeFiles/backend.dir/src/Simulator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/src/Simulator.cpp.s"
-	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/src/Simulator.cpp -o CMakeFiles/backend.dir/src/Simulator.cpp.s
+lib/CMakeFiles/backend.dir/src/Iterator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/backend.dir/src/Iterator.cpp.s"
+	cd /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/cmake-build-debug/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/src/Iterator.cpp -o CMakeFiles/backend.dir/src/Iterator.cpp.s
 
 # Object files for target backend
 backend_OBJECTS = \
-"CMakeFiles/backend.dir/src/Simulator.cpp.o"
+"CMakeFiles/backend.dir/src/Iterator.cpp.o"
 
 # External object files for target backend
 backend_EXTERNAL_OBJECTS =
 
-lib/libbackend.so: lib/CMakeFiles/backend.dir/src/Simulator.cpp.o
+lib/libbackend.so: lib/CMakeFiles/backend.dir/src/Iterator.cpp.o
 lib/libbackend.so: lib/CMakeFiles/backend.dir/build.make
 lib/libbackend.so: /usr/lib/x86_64-linux-gnu/liblapacke.so
 lib/libbackend.so: /usr/lib/x86_64-linux-gnu/libopenblas.so

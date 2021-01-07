@@ -9,16 +9,6 @@ def test_cpp_backend_active():
   assert backend is not backend_py, "The C++ Backend is not active, you are testing the functions with themself!"
   return
 
-def test_iterate():
-  """ Tests, whether the iteration of Python and C++ produce the same state values and policy """
-
-  # Calculate one iteration in Python and C++. Compare results using np.allclose()
-
-  assert True
-  assert True
-
-  return
-
 def test_simulate():
   """ Tests, whether the simulate steps matches between Python and C++ """
 

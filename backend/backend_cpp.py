@@ -1,14 +1,12 @@
-import numpy as np
-
 import os
 import logging
 
 _logger = logging.getLogger(__name__)
 
 
-#######################
-# Ugly Interface Part #
-#######################
+######################
+#   Interface Part   #
+######################
 
 def _find_compile_output():
     """ Returns all the files that belong to the compiled interface """
@@ -67,77 +65,25 @@ except (ModuleNotFoundError, ImportError) as e:
 _ffi = FFI()
 
 
-##########################################
-# Now just the wrappers for the c++ code #
-##########################################
+#############################
+# Wrappers for the c++ code #
+#############################
 
 def iterate(data, indices, indptr, n_rows, n_columns,
             J_star, J, pi, epsilon, alpha, n_actions,
-            n_stars, n_states):
+            n_stars, n_states, n_nonzero):
     if n_states != len(J_star):
         raise ValueError("Missmatch between state values and states.")
 
-    # t_prob_ptr = _ffi.cast("double*", t_prob.ctypes.data)
-    data_ptr = _ffi.cast("double*", data.ctype.data)
-    indices_ptr = _ffi.cast("int*", indices.ctype.data)
-    indptr_ptr = _ffi.cast("int*", indptr.ctype.data)
-    # n_rows_ptr = _ffi.cast("Double*", n_rows.ctype.data)
-    # n_columns_ptr = _ffi.cast("Double*", n_columns.ctype.data)
+    data_ptr = _ffi.cast("double*", data.ctypes.data)
+    indices_ptr = _ffi.cast("int*", indices.ctypes.data)
+    indptr_ptr = _ffi.cast("int*", indptr.ctypes.data)
     J_star_ptr = _ffi.cast("double*", J_star.ctypes.data)
-    J_ptr = _ffi.cast("double*", J.ctype.data)
-    pi_ptr = _ffi.cast("double*", pi.ctype.data)
-    # epsilon_ptr = _ffi.cast("double*", epsilon.ctypes.data)
-    # alpha_ptr = _ffi.cast("double*", alpha.ctypes.data)
-    # n_actions_ptr = _ffi.cast("double*", n_actions.ctypes.data)
-    # n_stars_ptr = _ffi.cast("double*", n_stars.ctypes.data)
-    # n_states_ptr = _ffi.cast("double*", n_states.ctypes.data)
+    J_ptr = _ffi.cast("double*", J.ctypes.data)
+    pi_ptr = _ffi.cast("double*", pi.ctypes.data)
 
     cpp_interface.lib.cffi_iterate(data_ptr, indices_ptr, indptr_ptr, n_rows, n_columns,
                                    J_star_ptr, J_ptr, pi_ptr, epsilon, alpha, n_actions,
-                                   n_stars, n_states)
+                                   n_stars, n_states, n_nonzero)
 
     return J, pi
-
-
-# def simulate(x, v, dt=1e-1):
-#     """ Same as in the python version, but using the c++ library """
-#
-#     # We are dealing with pointers in python! Better test for types and so on
-#     if x.shape != v.shape:
-#         raise ValueError("Shape missmatch for positions and velocities.")
-#
-#     if x.dtype != v.dtype != np.double:
-#         raise TypeError("Datatype missmatch for positions and velocities.")
-#
-#     dim, N = x.shape
-#
-#     # These are the memory addresses of the numpy matrices
-#     # Yes, C-pointer in python! Print them to the console if you like ;)
-#     x_ptr = _ffi.cast("double*", x.ctypes.data)
-#     v_ptr = _ffi.cast("double*", v.ctypes.data)
-#
-#     cpp_interface.lib.cffi_simulate(x_ptr, v_ptr, N, dim, dt)
-#
-#     return x, v
-
-
-# def simulate_T_steps(x, v, dt=1e-1, T=100):
-#     """ Same as in the python version, but using the c++ library """
-#
-#     # We are dealing with pointers in python! Better test for types and so on
-#     if x.shape != v.shape:
-#         raise ValueError("Shape missmatch for positions and velocities.")
-#
-#     if x.dtype != v.dtype != np.double:
-#         raise TypeError("Datatype missmatch for positions and velocities.")
-#
-#     dim, N = x.shape
-#
-#     # These are the memory addresses of the numpy matrices
-#     # Yes, C-pointer in python! Print them to the console if you like ;)
-#     x_ptr = _ffi.cast("double*", x.ctypes.data)
-#     v_ptr = _ffi.cast("double*", v.ctypes.data)
-#
-#     cpp_interface.lib.cffi_simulate(x_ptr, v_ptr, N, dim, dt, T)
-#
-#     return x, v

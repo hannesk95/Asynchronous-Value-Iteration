@@ -172,7 +172,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/src/Simulator.cpp">
+		<Unit filename="/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/lib/src/Iterator.cpp">
 			<Option target="backend"/>
 		</Unit>
 		<Unit filename="/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/main.cpp">

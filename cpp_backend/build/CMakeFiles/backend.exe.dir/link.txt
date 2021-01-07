@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -O3 -march=native -ffast-math -fopenmp  -rdynamic CMakeFiles/backend.exe.dir/main.cpp.o  -o backend.exe  -Wl,-rpath,/mnt/c/Users/Johan/Documents/GIT/Asynchronous-Value-Iteration/cpp_backend/build/lib lib/libbackend.so -lgomp -lpthread -llapacke -lopenblas -lgfortran -lm 

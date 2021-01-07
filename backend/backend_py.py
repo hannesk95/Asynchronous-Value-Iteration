@@ -40,14 +40,14 @@ def to_sparse_matrix(data, indices, indptr, shape):
 
 def iterate(data, indices, indptr, n_rows, n_columns,
             J_star, J, pi, epsilon, alpha, n_actions,
-            n_stars, n_states):
+            n_stars, n_states, n_nonzero):
 
     t_prob = to_sparse_matrix(data, indices, indptr, (n_rows, n_columns))
 
     error = math.inf
 
-    while error > epsilon:
-    # for _ in range(1000):
+    # while(error > epsilon)
+    for iteration in range(1000):
         for state in range(n_states):
             J_temp = []
             t_prob_temp = t_prob[state * n_actions: state * n_actions + n_actions, :]

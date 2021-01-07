@@ -1,11 +1,13 @@
+// C++ file which is used to test/debug the C++ part of this project
+
 #include <vector>
 #include <numeric>
 #include <iostream>
-#include <cmath>
+// #include <cmath>
 #include <chrono>
 #include <Eigen/Sparse>
 #include "omp.h"
-#include "Simulator.h"
+#include "Iterator.h"
 
 
 int main()
@@ -93,16 +95,19 @@ int main()
     const unsigned int n_actions = 4;
     const unsigned int n_rows = 500;
     const unsigned int n_columns = 125;
+    const unsigned int n_nonzero = 290;
     double epsilon = 10e-1;
     double alpha = 0.99;
 
     auto t0 = std::chrono::system_clock::now();
 
     Backend::iterate(values.data(), row_pointer.data(), rows.data(), n_rows, n_columns, J_star.data(),
-                     J.data(), pi.data(), epsilon, alpha, n_actions, n_stars, n_states);
+                     J.data(), pi.data(), epsilon, alpha, n_actions, n_stars, n_states, n_nonzero);
 
     auto t1 = std::chrono::system_clock::now();
+
     std::cout << "This took " << std::chrono::duration_cast<std::chrono::microseconds>(t1 - t0).count() << " micro seconds" << std::endl;
+    std::cout << "Work done successfully!" << std::endl;
 
     return 0;
 }

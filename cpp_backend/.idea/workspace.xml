@@ -20,8 +20,8 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="backend.exe" targetName="backend.exe" />
       <config projectName="backend.exe" targetName="backend" />
+      <config projectName="backend.exe" targetName="backend.exe" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -30,14 +30,46 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="63e55b08-dd43-4f4d-ab89-0d4acd90eb9d" name="Default Changelist" comment="">
+    <list default="true" id="1e944d1f-838f-43f7-bd4f-b69212c58487" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/src/Iterator.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../async_value_iter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../async_value_iter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/backend_cpp.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/backend_cpp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/backend_py.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/backend_py.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/compile_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/compile_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../compare.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/backend.exe.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/backend.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/backend.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/src/Simulator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/src/Simulator.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/backend.exe.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/backend.exe.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/CMakeFiles/backend.dir/src/Simulator.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libbackend.so" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libbackend.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/Simulator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Simulator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lib/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/inc/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/inc/Interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/inc/Simulator.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/inc/Iterator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/Simulator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/Iterator.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data_demonstration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../graphsearch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../particles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tests/test_backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/../tests/test_backend.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +83,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1lvxa5ezkZ6Z1lxvmNq3Z7daVJl" />
+  <component name="ProjectId" id="1m0ljXbleW5AOCQP47FGjmN2URq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -64,11 +96,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="CMake Application.backend.exe">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="backend" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="backend.exe" TARGET_NAME="backend" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -85,19 +112,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.backend.exe" />
       <item itemvalue="CMake Application.backend" />
+      <item itemvalue="CMake Application.backend.exe" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="63e55b08-dd43-4f4d-ab89-0d4acd90eb9d" name="Default Changelist" comment="" />
-      <created>1608491429111</created>
+      <changelist id="1e944d1f-838f-43f7-bd4f-b69212c58487" name="Default Changelist" comment="" />
+      <created>1608638526178</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1608491429111</updated>
-      <workItem from="1608491431499" duration="6652000" />
+      <updated>1608638526178</updated>
+      <workItem from="1608638528227" duration="5533000" />
+      <workItem from="1608652709273" duration="51000" />
     </task>
     <servers />
   </component>
@@ -114,39 +142,24 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="224" key="GridCell.Tab.0.bottom" timestamp="1608498120973">
-      <screen x="-906" y="-1080" width="1536" height="864" />
+    <state width="1493" height="530" key="GridCell.Tab.0.bottom" timestamp="1608648741119">
+      <screen x="1015" y="-1080" width="1536" height="864" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.bottom/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
-    <state width="1493" height="224" key="GridCell.Tab.0.center" timestamp="1608498120973">
-      <screen x="-906" y="-1080" width="1536" height="864" />
+    <state width="1493" height="530" key="GridCell.Tab.0.bottom/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@1015.-1080.1536.864" timestamp="1608648741119" />
+    <state width="1493" height="530" key="GridCell.Tab.0.center" timestamp="1608648741119">
+      <screen x="1015" y="-1080" width="1536" height="864" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.center/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
-    <state width="1493" height="224" key="GridCell.Tab.0.left" timestamp="1608498120973">
-      <screen x="-906" y="-1080" width="1536" height="864" />
+    <state width="1493" height="530" key="GridCell.Tab.0.center/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@1015.-1080.1536.864" timestamp="1608648741119" />
+    <state width="1493" height="530" key="GridCell.Tab.0.left" timestamp="1608648741118">
+      <screen x="1015" y="-1080" width="1536" height="864" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.left/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
-    <state width="1493" height="224" key="GridCell.Tab.0.right" timestamp="1608498120973">
-      <screen x="-906" y="-1080" width="1536" height="864" />
+    <state width="1493" height="530" key="GridCell.Tab.0.left/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@1015.-1080.1536.864" timestamp="1608648741118" />
+    <state width="1493" height="530" key="GridCell.Tab.0.right" timestamp="1608648741119">
+      <screen x="1015" y="-1080" width="1536" height="864" />
     </state>
-    <state width="1493" height="224" key="GridCell.Tab.0.right/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom" timestamp="1608498120973">
-      <screen x="-906" y="-1080" width="1536" height="864" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.bottom/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
-    <state width="1493" height="277" key="GridCell.Tab.1.center" timestamp="1608498120973">
-      <screen x="-906" y="-1080" width="1536" height="864" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.center/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
-    <state width="1493" height="277" key="GridCell.Tab.1.left" timestamp="1608498120973">
-      <screen x="-906" y="-1080" width="1536" height="864" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.left/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
-    <state width="1493" height="277" key="GridCell.Tab.1.right" timestamp="1608498120973">
-      <screen x="-906" y="-1080" width="1536" height="864" />
-    </state>
-    <state width="1493" height="277" key="GridCell.Tab.1.right/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@-906.-1080.1536.864" timestamp="1608498120973" />
+    <state width="1493" height="530" key="GridCell.Tab.0.right/0.0.1536.824/1015.-1080.1536.864/-906.-1080.1536.864@1015.-1080.1536.864" timestamp="1608648741119" />
   </component>
 </project>

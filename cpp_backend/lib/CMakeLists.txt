@@ -40,7 +40,7 @@ find_package(LAPACK REQUIRED)
 find_package(LAPACKE REQUIRED)
 
 # Collect all source files for easy compilation
-set(SRC_FILES ${CMAKE_CURRENT_LIST_DIR}/src/Simulator.cpp)
+set(SRC_FILES ${CMAKE_CURRENT_LIST_DIR}/src/Iterator.cpp)
 
 # The complete include folder, which is required for cffi to use the Interface.h
 set(INC_DIR ${CMAKE_CURRENT_LIST_DIR}/inc)
