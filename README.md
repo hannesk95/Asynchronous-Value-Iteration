@@ -15,7 +15,7 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
 
 ---
 
-### Prerequisits for Linux Enviroment
+### Prerequisits for Linux Enviroment (Tested on Ubuntu 20.04)
 - [Make](https://en.wikipedia.org/wiki/Make_(software)) - Build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles
 
 - [CMake](https://cmake.org/) - Platform for build automation, testing and packaging using a compiler-independent method
