@@ -26,7 +26,7 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
 <br/> `sudo apt-get install libopenblas-dev` 
 <br/> `sudo apt-get install liblapack-dev` 
 <br/> `sudo apt-get install liblapacke-dev` 
-<br/> you may also need: `sudo apt-get install zlib1g`
+<br/> `sudo apt-get install zlib1g` (may also be needed)
   
 - [OpenMP](https://www.openmp.org/) - API specification for parallel programming
 <br/> `sudo apt-get install openmpi-bin`
