@@ -12,10 +12,10 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
 - [`tests`](/tests) includes scripts for PyTest
 
 ### Prerequisits for Linux Enviroment
-- [Make](https://en.wikipedia.org/wiki/Make_(software))
-- [CMake](https://cmake.org/)
-- [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page)
-- [OpenMP](https://www.openmp.org/)
+- [Make](https://en.wikipedia.org/wiki/Make_(software)) - Build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles
+- [CMake](https://cmake.org/) - Platform for build automation, testing and packaging using a compiler-independent method
+- [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) - C++ template library for linear algebra
+- [OpenMP](https://www.openmp.org/) - API specification for parallel programming
 
 ### Execution
 
