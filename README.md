@@ -38,4 +38,4 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
 
 In order to make use of the code, please invoke the following steps:
 1. Invoke following command in the root directory of this repository: `make compile`
-2. Start application by invoking: `python3 async_value_iter.py`
+2. Start application by invoking: `python3 main.py`
