@@ -13,6 +13,8 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
 - [`data`](/data) includes some example scipy spare matrix data
 - [`tests`](/tests) includes scripts for PyTest
 
+---
+
 ### Prerequisits for Linux Enviroment
 - [Make](https://en.wikipedia.org/wiki/Make_(software)) - Build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles
 
@@ -29,7 +31,8 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
   `sudo apt-get install openmpi-bin`
   `sudo apt-get install openmpi-common`
   `sudo apt-get install libopenmpi-dev`
-
+  
+---
 
 ### Execution
 
