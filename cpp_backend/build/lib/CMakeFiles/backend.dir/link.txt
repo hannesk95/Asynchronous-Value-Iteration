@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -Wall -O3 -march=native -ffast-math -fopenmp  -shared -Wl,-soname,libbackend.so -o libbackend.so CMakeFiles/backend.dir/src/Iterator.cpp.o  -llapacke -lopenblas -lgfortran -lm -lgomp -lpthread 
