@@ -22,7 +22,10 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
   `sudo apt-get install cmake`
 
 - [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) - C++ template library for linear algebra
-  `sudo apt-get install libopenblas-dev` <br/> `sudo apt-get install liblapack-dev` <br/> `sudo apt-get install liblapacke-dev` <br/> you may also need: `sudo apt-get install zlib1g`
+<br/> `sudo apt-get install libopenblas-dev` 
+<br/> `sudo apt-get install liblapack-dev` 
+<br/> `sudo apt-get install liblapacke-dev` 
+<br/> you may also need: `sudo apt-get install zlib1g`
   
 - [OpenMP](https://www.openmp.org/) - API specification for parallel programming
   `sudo apt-get install openmpi-bin`
