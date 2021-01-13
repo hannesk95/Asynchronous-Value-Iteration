@@ -11,6 +11,12 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
 - [`data`](/data) includes some example scipy spare matrix data
 - [`tests`](/tests) includes scripts for PyTest
 
-### Prerequisits
+### Prerequisits for Linux Enviroment
+- [Make](https://en.wikipedia.org/wiki/Make_(software))
+- [CMake](https://cmake.org/)
+- [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page)
+- [OpenMP](https://www.openmp.org/)
 
 ### Execution
+
+In order to make use of the code, please invoke the following command in the root directory of this repository: `make compile`
