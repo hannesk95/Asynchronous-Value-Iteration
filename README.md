@@ -13,9 +13,21 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
 
 ### Prerequisits for Linux Enviroment
 - [Make](https://en.wikipedia.org/wiki/Make_(software)) - Build automation tool that automatically builds executable programs and libraries from source code by reading files called Makefiles
+
 - [CMake](https://cmake.org/) - Platform for build automation, testing and packaging using a compiler-independent method
+  `sudo apt-get install cmake`
+
 - [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) - C++ template library for linear algebra
+  `sudo apt-get install libopenblas-dev`
+  `sudo apt-get install liblapack-dev`
+  `sudo apt-get install liblapacke-dev`
+  you may also need: `sudo apt-get install zlib1g`
+  
 - [OpenMP](https://www.openmp.org/) - API specification for parallel programming
+  `sudo apt-get install openmpi-bin`
+  `sudo apt-get install openmpi-common`
+  `sudo apt-get install libopenmpi-dev`
+
 
 ### Execution
 
