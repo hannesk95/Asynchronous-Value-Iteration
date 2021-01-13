@@ -19,4 +19,6 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
 
 ### Execution
 
-In order to make use of the code, please invoke the following command in the root directory of this repository: `make compile`
+In order to make use of the code, please invoke the following steps:
+1. Invoke following command in the root directory of this repository: `make compile`
+2. Start application by invoking: `python3 async_value_iter.py`
