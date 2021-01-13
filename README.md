@@ -1,5 +1,5 @@
 # Asynchronous-Value-Iteration
-This project implements an asynchronous value iteration for a MDP. Python and C++ are linked using CFFI.
+This project implements an asynchronous value iteration for a Markov Decisioin Process (MDP). Python (for convenience purposes) and C++ (for performance purposes) are linked using CFFI.
 
 - backend includes the python module
 - cpp_backend includes the C++ source code
