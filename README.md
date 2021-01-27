@@ -20,13 +20,13 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
 
 - [CMake](https://cmake.org/) - Platform for build automation, testing and packaging using a compiler-independent method
 <br/> `sudo apt-get install cmake`
-<br/> `sudo apt-get install build-essential` (may also be needed)
+<br/> `sudo apt-get install build-essential`
 
 - [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) - C++ template library for linear algebra
 <br/> `sudo apt-get install libopenblas-dev` 
 <br/> `sudo apt-get install liblapack-dev` 
 <br/> `sudo apt-get install liblapacke-dev` 
-<br/> `sudo apt-get install zlib1g-dev` (may also be needed)
+<br/> `sudo apt-get install zlib1g-dev`
   
 - [OpenMP](https://www.openmp.org/) - API specification for parallel programming
 <br/> `sudo apt-get install openmpi-bin`
