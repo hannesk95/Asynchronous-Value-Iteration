@@ -43,4 +43,4 @@ In order to make use of the code, please invoke the following steps:
 
 ### Remarks
 
-Thank's to [`Martin Gottwald`](https://www.ei.tum.de/ldv/team/wissenschaftliche-mitarbeiter/martin-gottwald/) for providing the interface part using CFFI. 
+Thank's to [`Martin Gottwald`](https://www.ei.tum.de/ldv/team/wissenschaftliche-mitarbeiter/martin-gottwald/) for kindly providing the interface part (Python/C++) using CFFI. 
