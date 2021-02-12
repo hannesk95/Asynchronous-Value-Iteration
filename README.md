@@ -1,4 +1,4 @@
-# Asynchronous-Value-Iteration
+# HPC Dynamic-Programming using OpenMP and CFFI in C++
 ---
 ### Preface
 
