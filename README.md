@@ -1,4 +1,4 @@
-# HPC Dynamic-Programming using OpenMP and CFFI in C++
+# Dynamic-Programming using OpenMP in C++
 ---
 ### Preface
 
