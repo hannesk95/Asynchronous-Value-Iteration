@@ -40,3 +40,7 @@ This project implements an asynchronous value iteration for a Markov Decisioin P
 In order to make use of the code, please invoke the following steps:
 1. Invoke following command in the root directory of this repository: `make compile`
 2. Start application by invoking: `python3 main.py`
+
+### Remarks
+
+Thank's to [`Martin Gottwald`](https://www.ei.tum.de/ldv/team/wissenschaftliche-mitarbeiter/martin-gottwald/) for providing the interface part using CFFI. 
